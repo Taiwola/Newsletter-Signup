@@ -77,8 +77,14 @@ app.post('/', function(req,res){
         } else {
           res.sendFile(path.join(__dirname, 'failure.html'));
         }
+
+        response.on("data", function(data){
+          console.log(JSON.parse(data))
+        })
          
         });
+
+       
 
         request.write(jsonData);
         request.end();  
