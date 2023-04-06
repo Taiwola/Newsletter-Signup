@@ -1,0 +1,83 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.container h1{
+    font-weight: 200;
+    color: blueviolet;
+}
+
+.form-field{
+    display: grid;
+    gap: 10px;
+}
+
+.form-field .input-field{
+    padding: 10px 40px;
+    outline: none;
+    border: 1px solid blueviolet;
+    padding-inline-start: 10px;
+    color: blueviolet;
+}
+
+
+.form-field .input-field::placeholder{
+    color: blueviolet;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+.signup-btn{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.span{
+    text-align: center;
+}
+
+.span label{
+    color: blueviolet;
+}
+
+.success{
+    background-color: aliceblue;
+   color: darkgray;
+}
+
+.failure{
+   background-color: aliceblue;
+   color: darkgray;
+}
+
+.btn{
+    background-color: rgb(77, 77, 188);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
